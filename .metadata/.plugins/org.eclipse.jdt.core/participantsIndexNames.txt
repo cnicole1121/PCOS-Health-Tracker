@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\cnico\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4069610368.index
+\TinyCloset\src\main\java
+C:\Users\cnico\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4082828821.index
+\TinyClosetTreasures\src\main\java
+C:\Users\cnico\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4003729045.index
+\TinyClosetTreasures\src\main\java

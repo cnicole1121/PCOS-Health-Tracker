@@ -1,0 +1,20 @@
+# Users Database Configuration
+spring.datasource.users.url=jdbc:mysql://localhost:3306/pcos_health_tracker
+spring.datasource.users.username=root
+spring.datasource.users.password=563324
+spring.datasource.users.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# Quotes Database Configuration
+spring.datasource.quotes.url=jdbc:mysql://localhost:3306/pcos_health_tracker
+spring.datasource.quotes.username=root
+spring.datasource.quotes.password=563324
+spring.datasource.quotes.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# Mindfulness Database Configuration
+spring.datasource.mindfulness.url=jdbc:mysql://localhost:3306/pcos_health_tracker
+spring.datasource.mindfulness.username=root
+spring.datasource.mindfulness.password=563324
+spring.datasource.mindfulness.driver-class-name=com.mysql.cj.jdbc.Driver
+
+logging.level.org.springframework=DEBUG
+

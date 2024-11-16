@@ -1,0 +1,5 @@
+package com.example.pcoshealthtracker.controller;
+
+public class RegistrationController {
+
+}

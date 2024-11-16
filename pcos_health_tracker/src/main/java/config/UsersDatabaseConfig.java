@@ -1,0 +1,26 @@
+package config;
+
+import javax.sql.DataSource;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.jdbc.DataSourceBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.jdbc.core.JdbcTemplate;
+
+@Configuration
+public class UsersDatabaseConfig {
+
+    @Bean(name = "usersDataSource")
+    @Primary  // Mark this data source as the primary one
+    @ConfigurationProperties(prefix = "spring.datasource.users")
+    public DataSource usersDataSource() {
+        return DataSourceBuilder.create().build();
+    }
+
+    @Bean(name = "usersJdbcTemplate")
+    public JdbcTemplate usersJdbcTemplate(@Qualifier("usersDataSource") DataSource usersDataSource) {
+        return new JdbcTemplate(usersDataSource);
+    }
+}
